@@ -1,0 +1,157 @@
+.contact {
+
+    grid-column: center-start / center-end;
+
+    display: grid;
+    align-content: space-around;
+
+    margin: 15rem auto;
+    width: 100%;
+
+    //overlay on top of the image
+    background-image: linear-gradient(90deg, 
+    rgba(255, 255, 255, .9) 0%, 
+    rgba(255, 255, 255, .9) 50%, 
+    transparent 50%), 
+    url(../img/855605328.jpg);
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75vh;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .2);
+
+
+    @media only screen and (max-width: $tablet) {
+        background-image: linear-gradient(90deg, 
+        rgba(255, 255, 255, .9) 0%, 
+        rgba(255, 255, 255, .9) 67%, 
+        transparent 67%), 
+        url(../img/855605328.jpg);
+    }
+
+    @media only screen and (max-width: $small-tablet) {
+                background-image: linear-gradient(90deg, 
+        rgba(255, 255, 255, .9) 0%, 
+        rgba(255, 255, 255, .9) 100%, 
+        transparent 100%), 
+        url(../img/855605328.jpg);
+        grid-column: full-start / full-end;
+    }
+
+    @media screen and (max-width: $tablet) and (orientation: landscape) {
+        height: 50rem;
+        margin: 10rem auto;
+    }
+
+
+    &__heading {
+
+        h1 {
+            display: grid;
+            grid-template-columns: 1fr max-content 1fr;     //line, text, line
+            grid-column-gap: 2rem;
+
+            align-items: center;
+            width: 50%;
+            color: #000;
+
+            @media only screen and (max-width: $tablet) {
+                width: 67%;
+            }
+
+            @media only screen and (max-width: $small-tablet) {
+                width: 100%;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                font-family: serif;
+                height: 1px;
+                display: block;
+                background-color: currentColor;   
+            }
+        }
+
+        .swap {
+            width: 50%;
+            text-align: center;
+            font-family: $font-main;
+            color: $gold;
+
+            @media only screen and (max-width: $tablet) {
+                width: 67%;
+            }
+
+            @media only screen and (max-width: $small-tablet) {
+                width: 100%;
+            }
+        }
+    }
+
+
+    &__details {
+
+        display: grid;
+        width: 50%;
+        grid-row-gap: 2.5rem;
+
+        @media only screen and (max-width: $tablet) {
+            width: 67%;
+        }
+
+        @media only screen and (max-width: $small-tablet) {
+            width: 100%;
+        }
+    }
+
+
+    &__detail {
+
+        display: grid;
+        grid-template-columns: 25% 75%;
+
+        text-decoration: none;
+        //for hover effect
+        position: relative;
+
+        svg {
+            fill: $gold;
+
+            width: 5rem;
+            height: 5rem;
+            justify-self: center;  
+            z-index: 2;
+        }
+
+        p {
+            display: inline-block;
+            font-size: 3rem;
+            align-self: center;
+            color: #000;
+            z-index: 2;
+        }   
+    }
+
+    &__detail::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0px;
+        background-color: $gold;
+        transform: scaleX(0);
+        transform-origin: left;
+        // http://cubic-bezier.com/#.17,.67,.83,.67
+        transition: all cubic-bezier(.17,  .67, .83, .67) .2s;
+
+    }
+
+    &__detail:hover::before {
+        transform: scaleX(1);
+        width: 100%;
+    }
+}

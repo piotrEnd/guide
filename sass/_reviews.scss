@@ -1,0 +1,108 @@
+.reviews {
+    background-color: #fff;
+    grid-column: full-start / full-end;
+
+    position: relative;
+    height: 45vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media only screen and (max-width: $tablet) {
+        margin-top: 45rem;
+    }
+
+    @media only screen and (max-width: $phone) {
+        margin-top: 40rem;
+    }
+
+    @media screen and (max-width: $tablet) and (orientation: landscape) {
+        height: 50vh;
+        width: 100%;
+    }
+
+
+    .siema {
+        width: 100%;
+        position: absolute;
+        background-color: #fff;      
+    }
+}
+
+.review {
+
+    width: 66.6%;
+
+    margin: 0 auto;
+    overflow: hidden;  //don't overflow the box
+
+    position: relative; //for ::before
+    padding: 2rem;
+
+    @media only screen and (max-width: $tablet) { 
+        width: 80%;
+    }
+
+    @media only screen and (max-width: $phone) { 
+        width: 90%;
+    }
+
+    &__text {
+        padding: 4rem 0 2rem 4rem;
+        z-index: 10;    //text on top of quotation mark
+        position: relative; //defined position is necessary for z-index
+    }
+
+    &__client {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        text-align: right;
+    }
+
+    &__logo {
+        width: auto;
+
+        &--1 {
+            height: 1.5rem;
+            margin-left: 2.5rem;
+        }
+
+        &--2 {
+            height: 6rem;
+            width: 6rem;
+            margin-left: 2.5rem;
+            border-radius: 50%;
+        }
+
+        &--3 {
+            height: 3.5rem;
+            margin-left: 2.5rem;
+        }
+    }
+
+    //for quotation mark
+    &::before {
+        content: "\201C";       //entities -> https://css-tricks.com/snippets/html/glyphs/
+        position: absolute;     //parent to relative above
+        top: 0;      
+        left: 0;       
+        font-size: 16rem;
+        font-family: $font-main;
+        line-height: 1;
+        color: $gold;
+
+        z-index: 1;     //text on top, not quotation mark; here lower z-index
+    }
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+

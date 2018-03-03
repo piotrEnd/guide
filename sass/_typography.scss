@@ -1,0 +1,95 @@
+.header__heading {
+
+    width: 100%;
+    color: $gold;
+
+    h1 {
+        font-family: $font-secondary;
+        font-size: 4rem;
+        display: block;
+        letter-spacing: .6rem;
+        text-shadow: 0 1px 0 #7f7f7f;
+    }
+    
+    h1 span {
+        font-size: 12rem;
+        letter-spacing: .8rem;
+    }
+    
+    h2 {
+        font-family: $font-main;
+        font-size: 8rem;
+        word-spacing: 1rem;
+        letter-spacing: 2rem;
+        
+        display: block;
+        padding-left: 3%;   
+        margin-top: 1.5%;     
+        // letter-spacing: 1.2rem;
+    }
+}
+
+.features {
+
+    & p {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    & p span {
+        color: $gold;
+        font-family: $font-secondary;
+        letter-spacing: .05rem;
+    }
+}
+
+.guide__card {
+    
+    & .heading {
+        font-family: $font-secondary;
+        font-size: 2.68rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    & p {
+        text-align: justify;
+        font-size: 1.75rem;
+        line-height: 1.6;
+        // font-size: .75vw;
+    }
+
+    & p span {
+        color: $gold;
+        font-family: $font-secondary;
+        letter-spacing: .05rem;
+    }
+}
+
+.review {
+
+    &__text {
+        font-size: 3rem;
+    }
+
+    &__client-box {
+        // margin-right: auto;
+        font-size: 2rem;
+    }
+
+    &__client-name {
+        font-weight: 600;
+        // margin-bottom: .4rem;
+    }
+
+}
+
+.contact {
+
+    &__heading {
+        font-size: 3rem;
+        font-family: $font-secondary;
+    }
+}
+
+
