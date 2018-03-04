@@ -3,17 +3,30 @@
     width: 100%;
     color: $gold;
 
+    @media only screen and (max-width: $phone) {
+        margin: 0 auto;
+    }
+
     h1 {
         font-family: $font-secondary;
         font-size: 4rem;
         display: block;
         letter-spacing: .6rem;
         text-shadow: 0 1px 0 #7f7f7f;
+
+        @media only screen and (max-width: $phone) {
+            letter-spacing: 0;
+        }
     }
     
     h1 span {
         font-size: 12rem;
         letter-spacing: .8rem;
+
+        @media only screen and (max-width: $phone) {
+            letter-spacing: 0;
+        }
+        
     }
     
     h2 {
@@ -25,7 +38,10 @@
         display: block;
         padding-left: 3%;   
         margin-top: 1.5%;     
-        // letter-spacing: 1.2rem;
+
+        @media only screen and (max-width: $phone) {
+            letter-spacing: 0;
+        }
     }
 }
 
@@ -56,7 +72,6 @@
         text-align: justify;
         font-size: 1.75rem;
         line-height: 1.6;
-        // font-size: .75vw;
     }
 
     & p span {
@@ -73,13 +88,11 @@
     }
 
     &__client-box {
-        // margin-right: auto;
         font-size: 2rem;
     }
 
     &__client-name {
         font-weight: 600;
-        // margin-bottom: .4rem;
     }
 
 }

@@ -156,6 +156,10 @@ body {
     .features {
       display: flex;
       flex-direction: column; } }
+  @media only screen and (max-width: 37.5em) {
+    .features {
+      grid-column: full-start / full-end;
+      padding: 0 2rem; } }
   .features .icon {
     fill: #CCA531;
     max-height: 5rem;
@@ -163,6 +167,9 @@ body {
     @media only screen and (max-width: 62.5em) {
       .features .icon {
         width: 20%; } }
+    @media only screen and (max-width: 37.5em) {
+      .features .icon {
+        margin-right: 2rem; } }
   .features p {
     width: 100%; }
 
@@ -177,6 +184,9 @@ body {
       grid-column: col-start 2 / col-end 9;
       margin-top: 1rem;
       background-position: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .guide {
+      grid-column: full-start / full-end; } }
   .guide__card {
     height: 45rem;
     perspective: 200rem;
@@ -202,6 +212,9 @@ body {
       @media only screen and (max-width: 50em) {
         .guide__card--photo {
           background-size: 100%; } }
+      @media only screen and (max-width: 37.5em) {
+        .guide__card--photo {
+          width: 90%; } }
     .guide__card--bio {
       background-color: #fff;
       transform: rotateY(180deg);
@@ -217,6 +230,9 @@ body {
       @media only screen and (max-width: 50em) {
         .guide__card--bio {
           width: 100%; } }
+      @media only screen and (max-width: 37.5em) {
+        .guide__card--bio {
+          width: 90%; } }
   .guide:hover .guide__card--photo {
     transform: rotateY(-180deg); }
   .guide:hover .guide__card--bio {
@@ -379,15 +395,24 @@ body {
 .header__heading {
   width: 100%;
   color: #CCA531; }
+  @media only screen and (max-width: 37.5em) {
+    .header__heading {
+      margin: 0 auto; } }
   .header__heading h1 {
     font-family: "Lobster", cursive;
     font-size: 4rem;
     display: block;
     letter-spacing: .6rem;
     text-shadow: 0 1px 0 #7f7f7f; }
+    @media only screen and (max-width: 37.5em) {
+      .header__heading h1 {
+        letter-spacing: 0; } }
   .header__heading h1 span {
     font-size: 12rem;
     letter-spacing: .8rem; }
+    @media only screen and (max-width: 37.5em) {
+      .header__heading h1 span {
+        letter-spacing: 0; } }
   .header__heading h2 {
     font-family: "Didact Gothic", sans-serif;
     font-size: 8rem;
@@ -396,6 +421,9 @@ body {
     display: block;
     padding-left: 3%;
     margin-top: 1.5%; }
+    @media only screen and (max-width: 37.5em) {
+      .header__heading h2 {
+        letter-spacing: 0; } }
 
 .features p {
   font-size: 2.5rem;

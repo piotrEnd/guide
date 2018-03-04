@@ -43,6 +43,11 @@
         flex-direction: column;
     }
 
+    @media only screen and (max-width: $phone) {
+        grid-column: full-start / full-end;
+        padding: 0 2rem;
+    }
+
     & .icon {
         
         fill: $gold;
@@ -51,6 +56,10 @@
 
         @media only screen and (max-width: $tablet) {
             width: 20%;
+        }
+
+        @media only screen and (max-width: $phone) {
+            margin-right: 2rem;
         }
     }
 
@@ -74,6 +83,11 @@
         margin-top: 1rem;
 
         background-position: center;
+    }
+
+    @media only screen and (max-width: $phone) {
+        grid-column: full-start / full-end;
+
     }
 
 
@@ -111,6 +125,10 @@
             @media only screen and (max-width: $small-tablet) {
                 background-size: 100%;
             }
+
+            @media only screen and (max-width: $phone) {
+                width: 90%;
+            }
         }
 
         &--bio {
@@ -131,6 +149,10 @@
 
             @media only screen and (max-width: $small-tablet) {
                 width: 100%;
+            }
+
+            @media only screen and (max-width: $phone) {
+                width: 90%;
             }
         }
     }
