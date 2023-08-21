@@ -11,7 +11,7 @@ A city guide requires an online presence that is more than just a basic business
 Tailored for the German tourists, the Lobster font refers to historical German influences that continue to be evident in the city. It's about building reliance based upon perceived similarity. The content is deliberately concise to eliminate unnecessary distractions. The contrast color, a warm and earthy tone with a hint of gold, captures the essence of sunlight, creating a cozy and inviting atmosphere.
 
 
-Please >> [visit here]() <<
+Please >> [visit here](https://piotrend.github.io/guide/) <<
 
 
 
