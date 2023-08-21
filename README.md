@@ -3,17 +3,16 @@
 
 **Information architecture:**
 
-City guide needs online presence. Neither as simple as business card, nor complex as city to guide round. One-page-website fits here best: hero with aerial video catch attention and immediately communicate the field of expertise; next come few brand promises and short biographical note; then large testimonials; contact form is placed at the bottom.
+A city guide requires an online presence that is more than just a basic business card but not as intricate as an entire city to navigate. The optimal solution here is a one-page website that starts with a captivating aerial video in the hero section to capture attention. Subsequently, a concise biographical note accompanies a set of brand promises. Further down the page, prominent testimonials are showcased, and the contact form is strategically positioned at the bottom for easy access.
 
 
 **Design:**
 
-The target audience are Germans therefore typography refers to german influences historically present and still visible in the city. Its about building confidence based upon perceived similarity. The whole content is kept short and to the point to avoid any unnecessary distractions.
+Tailored for the German tourists, the Lobster font refers to historical German influences that continue to be evident in the city. It's about building reliance based upon perceived similarity. The content is deliberately concise to eliminate unnecessary distractions. The contrast color, a warm and earthy tone with a hint of gold, captures the essence of sunlight, creating a cozy and inviting atmosphere.
 
 
 Please >> [visit here]() <<
 
-> *March, 2018*
 
 
 | technology stack  |
@@ -23,3 +22,6 @@ Please >> [visit here]() <<
 | jQuery	       |
 | siema.js	       |
 | npm	       |
+
+
+> *March, 2018*
